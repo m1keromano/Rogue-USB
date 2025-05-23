@@ -149,7 +149,7 @@ void setup() {
   Serial.println("macOS");
   // Dispatch to macOS specific scripts
   #if defined(SCRIPT_NET_CONFIG)
-    payload_macos_net_config();
+    macos_net_config();
   #elif defined(SCRIPT_OPEN_CALCULATOR)
     payload_macos_open_calculator();
   #else
